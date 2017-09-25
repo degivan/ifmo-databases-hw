@@ -12,7 +12,7 @@ create table students (
 create table subjects (
 	subject_id int not null,
 	name varchar(40) not null,
-	teacher_id int not null,
+	teacher_id int,
 	primary key(subject_id));
 create table teachers (
 	teacher_id int not null,
