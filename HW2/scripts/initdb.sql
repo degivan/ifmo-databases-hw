@@ -18,11 +18,8 @@ create table teachers (
 	teacher_id int not null,
 	first_name varchar(50) not null,
 	last_name varchar(50) not null,
-	subject_id int,
 	primary key(teacher_id));
 alter table subjects add constraint teacher_fk foreign key(teacher_id) references teachers(teacher_id);                                                           
-alter table subjects add unique(subject_id, teacher_id);
-alter table teachers add constraint subject_fk foreign key(teacher_id, subject_id) references subjects(teacher_id, subject_id);
 create table marks (
 	student_id int not null,
 	subject_id int not null,
