@@ -24,4 +24,6 @@ create table marks (
 	student_id int not null,
 	subject_id int not null,
 	score int not null,
-	primary key(student_id, subject_id));
+	primary key(student_id, subject_id),
+	foreign key(student_id) references students(student_id),
+	foreign key(subject_id) references subjects(subject_id));
