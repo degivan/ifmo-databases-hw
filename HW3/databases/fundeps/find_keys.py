@@ -51,6 +51,7 @@ def find_keys(attributes, relations):
         superkeys = new_superkeys  # переходим к надключам размером на один меньше
     return keys
 
+#sdfsdfsd
 
 if __name__ == "__main__":
     relation1 = Relation({"StudentId"}, {"StudentName"})
@@ -58,8 +59,8 @@ if __name__ == "__main__":
     relation3 = Relation({"LecturerId"}, {"LecturerName"})
     relation4 = Relation({"CourseId"}, {"CourseName"})
     relation5 = Relation({"StudentId"}, {"GroupId"})
-    relation6 = Relation({"CourseId"}, {"LecturerId"})
-    relation7 = Relation({"StudentId", "GroupId", "CourseId", "LecturerId"}, {"Mark"})
+    relation6 = Relation({"GroupId", "CourseId"}, {"LecturerId"})
+    relation7 = Relation({"StudentId", "CourseId"}, {"Mark"})
     attributes = {"StudentId", "StudentName", "GroupId", "GroupName", "LecturerId", "LecturerName", "CourseId",
                   "CourseName", "Mark"}
     print(find_keys(attributes, {relation1, relation2, relation3, relation4, relation5, relation6, relation7}))

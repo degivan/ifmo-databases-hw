@@ -56,8 +56,8 @@ if __name__ == "__main__":
     relation3 = Relation({"LecturerId"}, {"LecturerName"})
     relation4 = Relation({"CourseId"}, {"CourseName"})
     relation5 = Relation({"StudentId"}, {"GroupId"})
-    relation6 = Relation({"CourseId"}, {"LecturerId"})
-    relation7 = Relation({"StudentId", "GroupId", "CourseId", "LecturerId"}, {"Mark"})
+    relation6 = Relation({"GroupId", "CourseId"}, {"LecturerId"})
+    relation7 = Relation({"StudentId", "CourseId"}, {"Mark"})
     irr_set = find_irreducible({relation7, relation6, relation5, relation4, relation3, relation2, relation1})
     for relation in irr_set:
         print(relation)
