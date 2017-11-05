@@ -51,7 +51,6 @@ def find_keys(attributes, relations):
         superkeys = new_superkeys  # переходим к надключам размером на один меньше
     return keys
 
-#sdfsdfsd
 
 if __name__ == "__main__":
     relation1 = Relation({"StudentId"}, {"StudentName"})
