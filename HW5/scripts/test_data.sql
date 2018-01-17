@@ -66,10 +66,10 @@ insert into Plan values (3, 4, 0);
 insert into Plan values (3, 5, 8);
 insert into Plan values (3, 6, 7);
 
-insert into Marks values (3, 0, 99.5);
+insert into Marks values (3, 0, 58.0);
 insert into Marks values (0, 0, 60.0);
-insert into Marks values (3, 1, 99.9);
-insert into Marks values (3, 2, 100);
+insert into Marks values (3, 1, 45.6);
+insert into Marks values (3, 2, 20);
 insert into Marks values (3, 3, 60.0);
-insert into Marks values (2, 0, 60.0);
+insert into Marks values (2, 0, 52.0);
 insert into Marks values (1, 7, 60.0);

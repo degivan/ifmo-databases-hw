@@ -1,0 +1,1 @@
+DROP TRIGGER loser_update on marks;	
